@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+    encoding:
+      charset: UTF-8
+
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/LibraryManagement'
+    username: 'postgres'
+    password: 'postgres'
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      properties:
+        hibernate:
+          format_sql: true
+    show-sql: true
